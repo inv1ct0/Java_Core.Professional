@@ -99,3 +99,15 @@ public class AuthService {
         }
     }
 }
+
+//недоделал. Изменение никнейма
+//    public void changeNickname (String oldNick, String newNick) {
+//        connection();
+//        try {
+//            stmt.execute("UPDATE users set nickname=" + newNick+"WHERE nickname ="+oldNick);
+//        } catch (SQLException e) {
+//            log.error("Ошибка обновления ника");
+//        } finally {
+//            disconnect();
+//        }
+//    }
