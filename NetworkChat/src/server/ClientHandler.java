@@ -9,7 +9,7 @@ class ClientHandler {
 
     private Socket socket;
     private DataInputStream in;
-    private static DataOutputStream out;
+    private DataOutputStream out;
     private Main server;
     private String nick;
 
@@ -108,7 +108,7 @@ class ClientHandler {
         }
     }
 
-    static void sendMsg(String msg) {
+    void sendMsg(String msg) {
         try {
             out.writeUTF(msg);
         } catch (IOException e) {
